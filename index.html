@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FriendsApp</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <!-- <script src="index.js"></script> -->
+    <script defer src="client.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="bg-fuchsia-200">
+    <nav class="my-3 bg-fuchsia-400 mx-64 rounded-lg mb-5">
+        <!-- <img src="wp.webp" alt="" class="logo"> -->
+        <div class="head text-center">
+            <h2 class="font-extrabold tracking-wider font-serif py-3">Welocme to FriendsApp</h2>
+        </div>
+    </nav>
+    <div id="containerid" class="container max-w-5xl m-auto h-[60vh] border-2 border-black p-2 overflow-y-scroll mb-5">
+        <!-- <div class="msgl">Thor:
+            Good morning king.</div>
+        <div class="msgr">
+            Sibansu: Helo bro!!!</div> -->
+    </div>
+
+    <div class="send">
+        <form class="send-container text-center max-w-5xl block m-auto w-[100%]" id="sendid" action="#">
+            <input class="w-[92%] rounded-lg h-9 border-2 border-black" type="text" name="messageinp" id="messageinp">
+            <button class="btn bg-gray-400 rounded-md py-0.5 px-3 border-2 border-black cursor-pointer" type="submit">Send</button>
+        </form>
+    </div>
+</body>
+
+</html>
